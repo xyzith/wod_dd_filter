@@ -1,2 +1,5 @@
-# wod_dd_filter
-Add a search filter dropdown menu to wod item list
+# WOD Dropdown Filter
+A tempermonkey script for web game World of Dungeon
+http://world-of-dungeons.org
+
+Add a item search filter dropdown menu for bette UX.
