@@ -4,7 +4,7 @@
 // @updateURL       https://raw.githubusercontent.com/xyzith/wod_dd_filter/master/dd_fitler.user.js
 // @grant           none
 // @author          Taylor Tang
-// @version         1.0
+// @version         1.1
 // @description     Add search filter dropdown menu to wod item list
 // @include         *://*.world-of-dungeons.org/wod/spiel/hero/items.php*
 // @include         *://*.world-of-dungeons.org/wod/spiel/trade/trade.php*
