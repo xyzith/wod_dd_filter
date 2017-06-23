@@ -4,7 +4,7 @@
 // @updateURL       https://raw.githubusercontent.com/xyzith/wod_dd_filter/master/dd_fitler.user.js
 // @grant           none
 // @author          Taylor Tang
-// @version         1.2
+// @version         1.3
 // @description     Add search filter dropdown menu to wod item list
 // @include         *://*.world-of-dungeons.org/wod/spiel/hero/items.php*
 // @include         *://*.world-of-dungeons.org/wod/spiel/trade/trade.php*
@@ -33,7 +33,7 @@
         return arr.join('&');
     }
     function getPlayerId() {
-        return document.body.innerHTML.match(/\d+\|B64_aXRlbQ__\|3\|0/)[0];
+        return document.body.innerHTML.match(/\d+\|B64_aXRlbQ__\|\d+\|\d+/)[0];
     }
 
     var form = document.querySelector('form[name="the_form"]');
