@@ -4,7 +4,7 @@
 // @updateURL       https://raw.githubusercontent.com/xyzith/wod_dd_filter/master/dd_fitler.user.js
 // @grant           none
 // @author          Taylor Tang
-// @version         1.1
+// @version         1.2
 // @description     Add search filter dropdown menu to wod item list
 // @include         *://*.world-of-dungeons.org/wod/spiel/hero/items.php*
 // @include         *://*.world-of-dungeons.org/wod/spiel/trade/trade.php*
@@ -45,7 +45,7 @@
         callback_js_code_item_3_callback_js_code: form.callback_js_code_item_3_callback_js_code,
         RenderSearchProfileEditor_dialogStatus: 'open',
         ajax_class_name: 'RenderSearchProfileEditor',
-        ajax_object_id: getPlayerId()'
+        ajax_object_id: getPlayerId()
     };
     var params_str = serialize(params);
 
