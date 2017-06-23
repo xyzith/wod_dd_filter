@@ -33,7 +33,7 @@
         return arr.join('&');
     }
     function getPlayerId() {
-        return document.body.innerHTML.match(/player=(\d+)/)[1];
+        return document.body.innerHTML.match(/\d+\|B64_aXRlbQ__\|3\|0/)[0];
     }
 
     var form = document.querySelector('form[name="the_form"]');
@@ -45,7 +45,7 @@
         callback_js_code_item_3_callback_js_code: form.callback_js_code_item_3_callback_js_code,
         RenderSearchProfileEditor_dialogStatus: 'open',
         ajax_class_name: 'RenderSearchProfileEditor',
-        ajax_object_id: getPlayerId() + '|B64_aXRlbQ__|3|0'
+        ajax_object_id: getPlayerId()'
     };
     var params_str = serialize(params);
 
