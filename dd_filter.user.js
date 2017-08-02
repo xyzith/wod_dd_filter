@@ -1,16 +1,18 @@
 // ==UserScript==
 // @name            WOD Dropdown Filter
 // @namespace       ttang.tw
-// @updateURL       https://raw.githubusercontent.com/xyzith/wod_dd_filter/master/dd_fitler.user.js
+// @updateURL       https://raw.githubusercontent.com/xyzith/wod_dd_filter/master/dd_filter.user.js
 // @grant           none
 // @author          Taylor Tang
-// @version         1.3
+// @version         1.4
 // @description     Add search filter dropdown menu to wod item list
 // @include         *://*.world-of-dungeons.org/wod/spiel/hero/items.php*
 // @include         *://*.world-of-dungeons.org/wod/spiel/trade/trade.php*
 // ==/UserScript==
 
 (function(){
+    if(!document.querySelector('.search_short')) { return false; }
+    
     function chomp(str) {
         return str.replace(/[ \xA0\n\t\r]*/g, '');
     }
@@ -33,8 +35,14 @@
         return arr.join('&');
     }
     function getPlayerId() {
-        return document.body.innerHTML.match(/\d+\|B64_aXRlbQ__\|\d+\|\d+/)[0];
+        var id = document.body.innerHTML.match(/\d+\|B64_aXRlbQ__\|\d+\|\d+/);
+        if(id) {
+            return id[0];
+        }
+        return false;
     }
+    var player_id = getPlayerId();
+    if(!player_id) { return false; }
 
     var form = document.querySelector('form[name="the_form"]');
     var url = '/wod/ajax/render.php';
