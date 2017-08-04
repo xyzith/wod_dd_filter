@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name            WOD Dropdown Filter
 // @namespace       ttang.tw
-// @updateURL       https://raw.githubusercontent.com/xyzith/wod_dd_filter/master/dd_filter.user.js
+// @updateURL       https://bitbucket.org/Xyzith/wod_dd_filter/raw/sync/dd_filter.user.js
 // @grant           none
 // @author          Taylor Tang
-// @version         1.4
+// @version         1.5
 // @description     Add search filter dropdown menu to wod item list
 // @include         *://*.world-of-dungeons.org/wod/spiel/hero/items.php*
 // @include         *://*.world-of-dungeons.org/wod/spiel/trade/trade.php*
