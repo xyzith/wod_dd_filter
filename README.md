@@ -3,5 +3,5 @@ A tempermonkey script for web game World of Dungeon [http://world-of-dungeons.or
 
 Add a item search filter dropdown menu for bette UX.
 
-Screenshot:
+Screenshot:  
 ![demo](demo.png)
